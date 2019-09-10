@@ -1,0 +1,25 @@
+{
+  "name": "clevelandrocks",
+  "version": "1.0.0",
+  "description": "sample sfdx project to create an org component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:unit": "lwc-jest",
+    "test:unit:debug": "lwc-jest --debug",
+    "test:unit:watch": "lwc-jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gr8Gatsby/clevelandrocks.git"
+  },
+  "author": "Kevin Hill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gr8Gatsby/clevelandrocks/issues"
+  },
+  "homepage": "https://github.com/Gr8Gatsby/clevelandrocks#readme",
+  "devDependencies": {
+    "@salesforce/lwc-jest": "^0.5.4"
+  }
+}
