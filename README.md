@@ -1,6 +1,11 @@
 # Creating an Organization Tree Experience
 
 ## Overview
+This repository is used to help facilitate a classroom exercise to have three teams build an Organization Tree experience. Each team will spend sometime designing their approach and coordinate with the other teams to deliver an integrated solution.
+
+Target design time: 30 minutes
+Target development time: 1 hour 15 minutes
+Target integration time: 30 minutes
 
 ## Rough Design
 
@@ -62,6 +67,11 @@ This is a sample dataset that can be used for an HTML declarative approach
 ### C-ORG Team
 
 The top level org component focuses only on data and orchestration for the entire Org tree, but itself does not render any UI.
+
+User Stories:
+* As an orchestration component I can provide `c-search` with autocomplete data
+* As an orchestration component I can provide `c-people` with parent data for people in an organization
+* As an orchestration component I can listen and respond to `search` events
 
 ### C-SEARCH Team
 
