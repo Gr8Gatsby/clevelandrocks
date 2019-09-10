@@ -4,7 +4,7 @@
 
 ## Rough Design
 
-![Rough Design](https://imgur.com/6YMPCw5)
+![Rough Design](https://i.imgur.com/6YMPCw5.png)
 
 ## Data
 This is a sample data set that can be used for JavaScript approach
