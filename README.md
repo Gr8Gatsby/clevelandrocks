@@ -114,5 +114,6 @@ Components that might be helpful to build:
 * `c-card` - A surface to render core people informaton and have UI that allows for editing a team
 
 HTML elements that could be helpful:
-* <select>
-* <button>
+* select - Potentially to have Team names as a drop-down
+* input - for team name entry
+* button - Maybe to save a team name if using input
