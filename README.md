@@ -96,7 +96,7 @@ Components that might be helpful to build:
 * `c-suggest` - This component will render suggestions based off of the people dataset 
 
 HTML Elements that could be useful to use:
-* <select> - For category selection of a search topic (e.g. Name, Title, Team)
+* select - For category selection of a search topic (e.g. Name, Title, Team)
 
 ### C-PEOPLE Team
 
