@@ -69,10 +69,46 @@ This is a sample dataset that can be used for an HTML declarative approach
 The top level org component focuses only on data and orchestration for the entire Org tree, but itself does not render any UI.
 
 User Stories:
-* As an orchestration component I can provide `c-search` with autocomplete data
-* As an orchestration component I can provide `c-people` with parent data for people in an organization
-* As an orchestration component I can listen and respond to `search` events
+* As an orchestration component I will provide `c-search` with autocomplete data
+* As an orchestration component I will provide `c-people` with parent data for people in an organization
+* As an orchestration component I will listen and respond to `Search` events
+* As an orchestration component I will update `c-people` data based on `Search` events to re-render the org based on the person returned from search
+  * *BONUS* As an orchestration component I will update `c-people` data based on `Search` results for the full path of the user
+* As an orchestration component I will update `c-people` data based on `NewTeamMember` events
+
+Components that might be helpful to build:
+* `c-org` - The cordination component for an Org
+* `c-person` - a component for declaratively putting data inside of the c-org component
+* `c-tree` - an ES6 class to help with creating a Tree object from the flat list of data
 
 ### C-SEARCH Team
 
+The search team provides a search experience and receives auto-complete data for categories (name, title, team) from the c-org team.
+
+User Stories:
+* As an end-user I am able to search for people within an Org based on name, title, and team so that I can filter the organization view
+* As an end-user I am able to see search suggestions based on name, title, and team so that I can quickly select a precise search suggestion and see the org tree filter
+* *BONUS* As an end-user I am able to pre-select a catagory based on name, title, or team to filter the results based on one category so that I can have 
+* As a search component I will notify `c-org` when a user submits a search
+
+Components that might be helpful to build:
+* `c-search` - The core component to handle input from an end-user for search terms
+* `c-suggest` - This component will render suggestions based off of the people dataset 
+
+HTML Elements that could be useful to use:
+* <select> - For category selection of a search topic (e.g. Name, Title, Team)
+
 ### C-PEOPLE Team
+
+The people team provides recursive rendering of a people within an Organizational Hierarchy
+
+User Stories:
+* As a user of the org component I will see the org hierarchy, so that I understand employee and boss reporting sturctures
+* As a user of the org component I can associate a person with a team, so that I can see people that work with each other across org boundries
+* As a person component I will notify `c-org` when a *NewTeamMember* has been added to a team, so that `c-search` can expose this data appropriately in search
+* As a person component I will use a known list of teams so that team names are consisten
+* *BONUS* As a person component I will create a Team View based on `c-search` results for a team
+
+Components that might be helpful to build:
+* `c-people` - A recursive template to render the org hierarchy
+* `c-card` - A surface to render core people informaton and have UI that allows for editing a team
