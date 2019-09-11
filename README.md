@@ -112,3 +112,7 @@ User Stories:
 Components that might be helpful to build:
 * `c-people` - A recursive template to render the org hierarchy
 * `c-card` - A surface to render core people informaton and have UI that allows for editing a team
+
+HTML elements that could be helpful:
+* <select>
+* <button>
