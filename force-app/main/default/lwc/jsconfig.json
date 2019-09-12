@@ -11,6 +11,9 @@
             ],
             "c/search": [
                 "search/search.js"
+            ],
+            "c/suggest": [
+                "suggest/suggest.js"
             ]
         }
     },
