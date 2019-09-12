@@ -12,7 +12,9 @@ export default class Search extends LightningElement {
             detail: event.target.value
         });
 
-        this.suggestResults = peopleData.filter(person => person.name.includes(this.inputName));
+        this.suggestResults = peopleData.filter(person =>
+          person.name.includes(event.target.value)
+        );
 
         this.dispatchEvent(searchEvent);
         this.suggestionsHidden = false;
