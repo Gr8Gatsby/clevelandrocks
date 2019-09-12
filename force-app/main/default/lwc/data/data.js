@@ -6,12 +6,12 @@ var peopleData = [
     team:'', 
     children: [
         {key: 2, name: "Matt", title:'VP', team: "", children: [
-          {key: 2, name: "Steve", title:'VP', team: ""}, 
-          {key: 3, name: "Trevor", title: "Sales", team: ""}
+          {key: 3, name: "Steve", title:'VP', team: ""}, 
+          {key: 4, name: "Trevor", title: "Sales", team: ""}
         ]}, 
-        {key: 2, name: "Kirk", title:'VP', team: "", children: [
-          {key: 2, name: "Kris", title:'VP', team: ""}, 
-          {key: 3, name: "Zach", title: "Sales", team: ""}
+        {key: 5, name: "Kirk", title:'VP', team: "", children: [
+          {key: 6, name: "Kris", title:'VP', team: ""}, 
+          {key: 7, name: "Zach", title: "Sales", team: ""}
         ]}
     ] 
   }
