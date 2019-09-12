@@ -5,6 +5,9 @@
         "paths": {
             "c/data": [
                 "data/data.js"
+            ],
+            "c/app": [
+                "app/app.js"
             ]
         }
     },
