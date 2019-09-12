@@ -3,11 +3,17 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/app": [
+                "app/app.js"
+            ],
             "c/data": [
                 "data/data.js"
             ],
-            "c/app": [
-                "app/app.js"
+            "c/people": [
+                "people/people.js"
+            ],
+            "c/person": [
+                "person/person.js"
             ]
         }
     },
