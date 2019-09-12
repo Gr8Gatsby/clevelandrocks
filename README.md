@@ -70,7 +70,7 @@ The top level org component focuses only on data and orchestration for the entir
 
 User Stories:
 * As an orchestration component I will provide `c-search` with autocomplete data
-* As an orchestration component I will provide `c-people` with parent data for people in an organization
+* As an orchestration component I will provide `c-people` with parent/child data for people in an organization
 * As an orchestration component I will listen and respond to `Search` events
 * As an orchestration component I will update `c-people` data based on `Search` events to re-render the org based on the person returned from search
   * *BONUS* As an orchestration component I will update `c-people` data based on `Search` results for the full path of the user
