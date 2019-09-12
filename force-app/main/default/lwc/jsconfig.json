@@ -3,11 +3,14 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/app": [
+                "app/app.js"
+            ],
             "c/data": [
                 "data/data.js"
             ],
-            "c/app": [
-                "app/app.js"
+            "c/search": [
+                "search/search.js"
             ]
         }
     },
