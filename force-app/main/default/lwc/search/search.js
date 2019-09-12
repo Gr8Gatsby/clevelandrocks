@@ -1,7 +1,8 @@
 import { LightningElement, track } from 'lwc';
+import { peopleData } from 'c/data';
 
 export default class Search extends LightningElement {
-
+    suggestResults = peopleData;
     @track inputName;
     @track suggestionsHidden = true;
 

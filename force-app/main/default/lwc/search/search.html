@@ -3,7 +3,7 @@
         <div class="slds-card__body slds-card__body_inner slds-p-vertical_small">
             <input type="text" value={inputName} oninput={handleInput} class="slds-input" placeholder="Search..."/>
             <template if:false={suggestionsHidden}>
-                <c-suggest onsuggest={handleSuggest}></c-suggest>
+                <c-suggest onsuggest={handleSuggest} results={suggestResults}></c-suggest>
             </template>
         </div>
     </div>
