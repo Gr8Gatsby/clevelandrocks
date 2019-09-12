@@ -1,5 +1,12 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement } from 'lwc';
 
 export default class Search extends LightningElement {
-    @api records;
+
+    handleInput(event) {
+        const searchEvent = new CustomEvent('search', {
+            detail: event.target.value
+        });
+
+        this.dispatchEvent(searchEvent);
+    }
 }
