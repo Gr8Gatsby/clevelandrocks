@@ -7,7 +7,7 @@ export default class Org extends LightningElement {
 	@track autoCompeteResults;
 
 	connectedCallback() {
-		registerSearchEvent('suggest', someCallback, this);
+		registerSearchEvent('suggest', this.filterAutoSuggest, this);
 	}
 
 	filterAutoSuggest(event) {
