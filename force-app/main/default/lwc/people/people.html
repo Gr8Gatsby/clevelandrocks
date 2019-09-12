@@ -1,0 +1,8 @@
+<template>
+    <div class="slds-card">
+        <c-person person={person}></c-person>
+            <template for:each={person.children} for:item="child">
+                <c-people key={child.key} person={child}></c-people>
+            </template>
+    </div>
+</template>
