@@ -1,13 +1,26 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement, track, api } from 'lwc';
 
 export default class SearchCategory extends LightningElement {
-	@track category
+	@track _category = 'Name';
+
+	@api
+	set category(value) {
+		this._category = value;
+	}
 	
-	changeCateogry(event) {
+	handleCategoryChange(event) {
 		event.preventDefault();
 
-		const selectedCategoryEvent = new CustomEvent('selected', { detail: this.category });
+		const categorySelectedEvent = new CustomEvent('categoryselected', { detail: this._category });
 
-		this.dispatchEvent(selectedCategoryEvent);
+		this.dispatchEvent(categorySelectedEvent);
+	}
+
+	get options() {
+		return [
+			{ label: 'Name', value: 'Name' },
+			{ label: 'Team', value: 'Team' },
+			{ label: 'Title', value: 'Title' },
+		];
 	}
 }
