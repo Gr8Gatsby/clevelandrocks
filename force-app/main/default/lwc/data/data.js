@@ -1,4 +1,4 @@
-var peopleData = 
+var peopleData =
   {       
     key: 1,
     name: "Michael", 
