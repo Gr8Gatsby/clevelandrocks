@@ -9,10 +9,13 @@ export default class Org extends LightningElement {
 
     //TODO: return results from tree on click event
     setTeamName(key, teamName){
-        const result = tree.map(branch => branch.key).filter(branch => branch.key === key).reduce((acc, cur) => ({
-            ...acc,
-            ...cur
-        }), {});
+        const result = generateTree(key)
+            .map(branch => branch.key)
+            .filter(branch => branch.key === key)
+            .reduce((acc, cur) => ({
+                ...acc,
+                ...cur
+            }), {});
         result.team = teamName;
     }
 }
