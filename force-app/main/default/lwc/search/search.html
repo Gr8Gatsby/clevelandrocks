@@ -1,7 +1,10 @@
 <template>
     <div class="slds-card">
         <div class="slds-card__body slds-card__body_inner slds-p-vertical_small">
-            <input type="text" oninput={handleInput} class="slds-input" placeholder="Search..."/>
+            <input type="text" value={inputName} oninput={handleInput} class="slds-input" placeholder="Search..."/>
+            <template if:false={suggestionsHidden}>
+                <c-suggest onsuggest={handleSuggest}></c-suggest>
+            </template>
         </div>
     </div>
 </template>
