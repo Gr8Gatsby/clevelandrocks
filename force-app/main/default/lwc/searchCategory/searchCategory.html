@@ -1,3 +1,15 @@
 <template>
-    
+    <div class="slds-form-element">
+		<label class="slds-form-element__label" for="select-01">Search Category</label>
+		<div class="slds-form-element__control">
+			<div class="slds-select_container">
+				<select class="slds-select" id="select-01" onchange={changeCategory}>
+					<option value="">Please select a search category</option>
+					<option>Name</option>
+					<option>Title</option>
+					<option>Team</option>
+				</select>
+			</div>
+		</div>
+	</div>
 </template>
