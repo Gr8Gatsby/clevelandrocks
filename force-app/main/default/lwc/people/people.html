@@ -1,7 +1,7 @@
 <template>
     <div class="slds-p-left_large">
-        <c-person person={person}></c-person>
-        <template for:each={person.children} for:item="child">
+        <c-person person={person} onclick={handleClick}></c-person>
+        <template for:each={person.children} for:item="child" if:false={collapsed}>
             <c-people key={child.key} person={child}></c-people>
         </template>
     </div>
