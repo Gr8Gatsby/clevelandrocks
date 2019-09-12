@@ -1,5 +1,5 @@
 var peopleData = [
-  { key: 1, name: "Stella Smith", title: "CEO" },
+  { key: 1, name: "Stella Smith", title: "CEO"},
   { key: 2, name: "Luke Leonard", title: "VP Marketing/Sales", parent: 1 },
   { key: 3, name: "Meg McDonald", title: "Sales", parent: 2 },
   { key: 4, name: "Peggy Pierce", title: "VP Engineering", parent: 1 },
