@@ -1,3 +1,16 @@
 <template>
-    
+    <template if:true={hasResults}>
+        <div class="container">
+            <ul>
+                <template for:each={results} for:item="result">
+                    <li key={result.key}>
+                        <c-suggest-item item={result} key={result.key}></c-suggest-item>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </template>
+    <template if:false={hasResults}>
+        <div>no items found!</div>
+    </template>
 </template>
