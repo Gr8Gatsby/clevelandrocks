@@ -17,6 +17,9 @@
             ],
             "c/searchCategory": [
                 "searchCategory/searchCategory.js"
+            ],
+            "c/suggestItem": [
+                "suggestItem/suggestItem.js"
             ]
         }
     },

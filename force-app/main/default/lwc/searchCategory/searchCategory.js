@@ -1,13 +1,17 @@
 import { LightningElement, track, api } from 'lwc';
 
 export default class SearchCategory extends LightningElement {
-	@track _category = 'Name';
+	@track _category;
 
 	@api
+	get category() {
+		return this._category;
+	}
+
 	set category(value) {
 		this._category = value;
 	}
-	
+
 	handleCategoryChange(event) {
 		event.preventDefault();
 

@@ -2,6 +2,7 @@ import { LightningElement, track } from 'lwc';
 import { peopleData } from 'c/data';
 
 export default class Search extends LightningElement {
+    @track category = 'Name';
     @track inputName;
     @track suggestionsHidden = true;
 
@@ -23,5 +24,9 @@ export default class Search extends LightningElement {
     handleSuggest(event) {
         this.inputName = event.detail.name;
         this.suggestionsHidden = true;
+    }
+
+    selectCategory(event) {
+        this.category = event.detail;
     }
 }
